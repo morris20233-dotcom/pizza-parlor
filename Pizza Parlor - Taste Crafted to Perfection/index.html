@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Meta Tags -->
+	<meta name="description" content="Pizza Parlor | Taste Crafted to Perfection. Order the best gourmet pizzas in Kampala, Uganda.">	
+	<title>Pizza Parlor | Taste Crafted to Perfection</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!-- Schema Markup (JSON-LD) for a Restaurant -->
+	<script type="application/ld+json">
+		{
+			"@contxt": "https://schema.org",
+			"@type": "Restaurant",
+			"name": "Pizza Palor",
+			"image": "https://kato-morris-pizza-palor.netlify.app/pngimg.com/uploads/pizza/pizza_PNG44089.png",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocally": "Kampala",
+				"addressCountry": "UG"
+			},
+			"telephone": "+256757769174",
+			"servesCuisine": "Pizza"
+		}
+	</script>
+</head>
+<body>
+
+	<header>
+		<div class="logo">Pizza <span class="highlight">Parlor</span></div>
+		<nav>
+			<ul class="nav-links">
+				<li> <a href="#home" class="active">Home</a> </li>
+				<li class="dropdown">
+				<a href="#menu">
+					Menu
+					<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<polyline points="6 9 12 15 18 9" />
+					</svg>
+				</a>
+				<ul class="dropdown-content">
+					<li> <a href="#menu">Classic Favorites</a> </li>
+					<li> <a href="#menu">Vegetarian</a> </li>
+					<li> <a href="#menu">Meat Lovers</a> </li>
+					<li> <a href="#menu">Gourmet Specials</a> </li>
+				</ul>
+				</li>
+				<li> <a href="#specials">Specials</a> </li>
+				<li> <a href="#testimonials">Testimonials</a> </li>
+				<li> <a href="#contact">Contact</a> </li>
+			</ul>
+		</nav>
+		<div class="header-icons">
+			<a href="#" aria-label="Search">
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<circle cx="11" cy="11" r="8" />
+					<line x1="21" y1="21" x2="16.65" y2="16.65" />
+				</svg>
+			</a>
+			<a href="#" id="open-cart-btn" aria-label="Cart" style="position: relative;">
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+					<line x1="3" y1="6" x2="21" y2="6" />
+					<path d="M16 10a4 4 0 0 1-8 0" />
+				</svg> 
+				<span id="cart-count" style="position: absolute; top: -5px; right: -8px; background: #e58a3c; color: #000; font-size: 10px; font-weight: bold; width: 16px; height: 16px; border-radius: 50%; display: none; justify-content: center; align-items: center;">0</span>
+			</a>
+			<a href="#" id="open-signup-btn" aria-label="User Profile">
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+					<circle cx="12" cy="7" r="4"  />
+				</svg> 
+			</a>
+		</div>
+	</header>
+
+	<section id="home" class="hero">
+		<div class="hero-text">
+			<p class="subtitle">- EXCEPTIONAL PIZZA</p>
+			<h1>Taste Crafted <br><span class="highlight">to Perfection</span></h1>
+			<p class="description">Crafting exceptional pizza experiences, made with the freshest ingredients.</p>
+			<div class="hero-buttons">
+				<a href="#menu" class="btn-primary">ORDER NOW 
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<line x1="5" y1="12" x2="19" y2="12" />
+						<polyline points="12 5 19 12 12 19" />
+					</svg>
+				</a>
+				<a href="#contact" class="btn-secondary">RESERVE TABLE 
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<rect x="3" y1="4" width="18" height="18" rx="2" ry="2" />
+						<line x1="16" y1="2" x2="16" y2="6" />
+						<line x1="8" y1="2" x2="8" y2="6" />
+						<line x1="3" y1="10" x2="21" y2="10" />
+					</svg> 
+				</a>
+			</div>
+			<div class="hero-features">
+				<div class="feature-item">
+					<div class="feature-icon">
+						<svg viewBox="0 0 24 24" fill="none" stroke="#e58a3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+							<path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+						</svg>
+					</div>
+					<div class="feature-text">
+						<h4>FRESH INGREDIENT</h4>
+						<p>Sourced Daily</p>
+					</div>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">
+						<svg viewBox="0 0 24 24" fill="none" stroke="#e58a3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="8" r="7" />
+							<polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+						</svg>
+					</div>
+					<div class="feature-text">
+						<h4>AWARD WINNING</h4>
+						<p>Culinary Excellence</p>
+					</div>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">
+						<svg viewBox="0 0 24 24" fill="none" stroke="#e58a3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6z" />
+							<line x1="6" y1="17" x2="18" y2="17" />
+						</svg>
+					</div>
+					<div class="feature-text">
+						<h4>EXPERTLY CRAFTED</h4>
+						<p>By Passionate Chefs</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-image transparent-hero">
+			<div class="glow-effect"></div>
+			<img src="https://pngimg.com/uploads/pizza/pizza_PNG44089.png" alt="Delicious Pizza" aria-label="Delicious Pizza">
+		</div>		
+	</section>
+
+	<section  id="menu" class="menu-section">
+		<div class="menu-header">
+			<p class="menu-subtitle">- CHEF'S FAVORITES -</p>
+			<h2>Signature <span class="highlight">Collection</span></h2>
+			<p class="menu-description">Handpicked favorites from our menu, crafted with passion and designed to leave a lasting impression.</p>
+		</div>
+		<div class="menu-grid">
+			<!-- Item 1: Classic Margarita -->
+			<div class="menu-card">
+				<div class="menu-image-container">
+					<img src="img/Classic Margherita Pizza.jpeg" alt="Classic Margherita Pizza" loading="lazy">
+				</div>
+				<div class="menu-info">
+					<h3>Classic Margarita</h3>
+					<p>Perfectly baked crust with rich tomato sauce, fresh mozzarella, and basil.</p>
+					<div class="menu-footer">
+						<span class="price">UGX 35,000</span>
+						<button class="add-to-cart" aria-label="Add to cart">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+								<line x1="3" y1="6" x2="21" y2="6" />
+								<path d="M16 10a4 4 0 0 1-8 0" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- Item 2: Vegetarian -->
+			<div class="menu-card">
+				<div class="menu-image-container">
+					<img src="img/rafael-dios-c3OcxXBN6QU-unsplash.jpg" alt="Vegetarian Garden Pizza" loading="lazy">
+				</div>
+				<div class="menu-info">
+					<h3>Garden Veggie Delight</h3>
+					<p>Loaded with bell peppers, red onions, mushrooms, and black olives.</p>
+					<div class="menu-footer">
+						<span class="price">UGX 42,000</span>
+						<button class="add-to-cart" aria-label="Add to cart">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+								<line x1="3" y1="6" x2="21" y2="6" />
+								<path d="M16 10a4 4 0 0 1-8 0" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- Item 3: Meat Lovers -->
+			<div class="menu-card">
+				<div class="menu-image-container">
+					<img src="img/will-ma-38WKXFysDKc-unsplash.jpg" alt="Meat Lovers" loading="lazy">
+				</div>
+				<div class="menu-info">
+					<h3>Ultimate Meat Lovers</h3>
+					<p>Pepperoni, sausage, bacon, and ham over a bed of melted mozzarella.</p>
+					<div class="menu-footer">
+						<span class="price">UGX 55,000</span>
+						<button class="add-to-cart" aria-label="Add to cart">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+								<line x1="3" y1="6" x2="21" y2="6" />
+								<path d="M16 10a4 4 0 0 1-8 0" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- Item 4: Gourmet Specials -->
+			<div class="menu-card">
+				<div class="menu-image-container">
+					<img src="img/Gourmet Truffle Pizza.jpg" alt="Gourmet Truffle Pizza" loading="lazy">
+				</div>
+				<div class="menu-info">
+					<h3>Gourmet Truffle & Prosciutto</h3>
+					<p>Premium prosciutto, wild mushrooms, and truffle oil on a thin artisan crust.</p>
+					<div class="menu-footer">
+						<span class="price">UGX 75,000</span>
+						<button class="add-to-cart" aria-label="Add to cart">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+								<line x1="3" y1="6" x2="21" y2="6" />
+								<path d="M16 10a4 4 0 0 1-8 0" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+
+	<section class="specials-section" id="specials">
+		<div class="specials-header">
+			<p class="specials-subtitle">- OUR SPECIALS -</p>
+			<h2>Exclusive <span class="highlight">Offers</span></h2>
+			<p class="specials-description">
+				Discover our limited-time deals and chef's special combos. Crafted to give you the best experience and value.
+			</p>
+		</div>
+		<div class="specials-grid">
+			<div class="special-card">
+				<div class="special-image-container">
+					<img src="img/black-father-leaning-in-to-bite-a-pizza-slice-from-his-son-while-sharing-a-pizza-meal.jpg" alt="Family Feast" loading="lazy">
+					<div class="special-badge">-20% OFF</div>
+				</div>
+				<div class="special-info">
+					<h3>The Family Feast</h3>
+					<p>2 Large Classic Pizza, 1 Garlic Bread, and a 2L Soda. Perfect for Sharing.</p>
+					<div class="special-footer">
+						<div class="price-group">
+							<span class="old-price">UGX 120,000</span>
+							<span class="new-price">UGX 95,000</span>
+						</div>
+						<button class="add-to-cart special-cart-btn" aria-label="Add to cart">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+								<line x1="3" y1="6" x2="21" y2="6" />
+								<path d="M16 10a4 4 0 0 1-8 0" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="special-card">
+				<div class="special-image-container">
+					<img src="img/c7fa15c9c5baec09c2834518c0753792.jpg" alt="Meat Lovers Deal" loading="lazy">
+					<div class="special-badge">FREE DELIVERY</div>
+				</div>
+				<div class="special-info">
+					<h3>Meat Lovers Today</h3>
+					<p>Buy any Large Meat Lovers pizza and get free delivery within Kampala.</p>
+					<div class="special-footer">
+						<div class="price-group">
+							<span class="new price">UGX 55,000</span>
+						</div>
+						<button class="add-to-cart special-cart-btn" aria-label="Add to cart">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+								<line x1="3" y1="6" x2="21" y2="6" />
+								<path d="M16 10a4 4 0 0 1-8 0" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="special-card">
+				<div class="special-image-container">
+					<img src="img/combo-meal-sub-sandwiches-pizza-chips-chicken-strips.jpg" alt="Lunch Combo" loading="lazy">
+					<div class="special-badge">COMBO</div>
+				</div>
+				<div class="special-info">
+					<h3>Quick Lunch Combo</h3>
+					<p>1 Personal Pizza of your choice + 1 Soft Drink. Available Mon-Fri, 12:00PM-3:00PM.</p>
+					<div class="special-footer">
+						<div class="price-group">
+							<span class="old-price">UGX 35,000</span>
+							<span class="new-price">UGX 25,000</span>
+						</div>
+						<button class="add-to-cart special-cart-btn" aria-label="Add to cart">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+								<line x1="3" y1="6" x2="21" y2="6" />
+								<path d="M16 10a4 4 0 0 1-8 0" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="special-card">
+				<div class="special-image-container">
+					<img src="img/1c2bc529f1a00d1dbe8b336ea37c0335.jpg" alt="Dessert Deal" loading="lazy">
+					<div class="special-badge">SWEET DEAL</div>
+				</div>
+				<div class="special-info">
+					<h3>Dessert & Dine</h3>
+					<p>Get a free slice of Chocolate Fudge Cake with any Gourmet Pizza purchase.</p>
+					<div class="special-footer">
+						<div class="price-group">
+							<span class="price">UGX 75,000</span>
+						</div>
+						<button class="add-to-cart special-cart-btn" aria-label="Add to cart">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+								<line x1="3" y1="6" x2="21" y2="6" />
+								<path d="M16 10a4 4 0 0 1-8 0" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</section>
+
+	<section id="testimonials" class="testimonials-section">
+		<div class="testimonials-header">
+			<div class="header-left">
+				<p class="test-subtitle">WHAT OUR GUESTS SAY</p>
+				<h2>Unforgettable <span class="highlight">Experiences</span></h2>
+			</div>
+			<div class="header-right">
+				<div class="avatars">
+					<img src="img/male_user.png" alt="Guest">
+					<img src="img/male_user.png" alt="Guest">
+					<img src="img/male_user.png" alt="Guest">
+					<div class="avatar-more">2k+</div>
+				</div>
+				<div class="rating-text">
+					<div class="stars">
+						<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+						<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+						<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+						<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+						<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+					</div>
+					<span class="rating-score">4.9</span>
+				</div>
+				<p class="rating-subtitle">From 2,500+ happy diners</p>
+			</div>
+		</div>
+		<div class="testimonials-carousel-wrapper">
+			<button class="carousel-btn prev-btn" aria-label="Previous">
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+			</button>
+			<div class="testimonials-track" id="testimonialTrack">
+				<!-- Card 1 -->
+				<div class="testimonial-card">
+					<div class="card-top">
+						<div class="user-info">
+							<img src="img/lion.png" alt="Mr. Lion">
+							<div class="stars">
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+							</div>
+						</div>
+						<span class="quote-mark">"</span>
+					</div>
+					<p class="review-text">The food was exceptional, the atmosphere was elegant, and every dish exceeded our expectations. Truly a five-star experience.</p>
+					<div class="card-divider"></div>
+					<div class="user-details">
+						<h4>Roar</h4>
+						<p>Food Blogger</p>
+					</div>
+				</div>
+				<!-- Card 2 -->
+				<div class="testimonial-card">
+					<div class="card-top">
+						<div class="user-info">
+							<img src="img/bull.png" alt="Mr. Buffalo">
+							<div class="stars">
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+							</div>
+						</div>
+						<span class="quote-mark">"</span>
+					</div>
+					<p class="review-text">One of the best dining experiences we've had. Beautiful presentation and incredible flavors that keep us coming back.</p>
+					<div class="card-divider"></div>
+					<div class="user-details">
+						<h4>RedBull</h4>
+						<p>Entrepreneur</p>
+					</div>
+				</div>
+				<!-- Card 3 -->
+				<div class="testimonial-card">
+					<div class="card-top">
+						<div class="user-info">
+							<img src="img/eagle.png" alt="Mr.Eagle">
+							<div class="stars">
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+							</div>
+						</div>
+						<span class="quote-mark">"</span>
+					</div>
+					<p class="review-text">Absolutely stunning price. The ambiance is perfect for a date night, and the pizza is simply out of this world. Highly recommend!</p>
+					<div class="card-divider"></div>
+					<div class="user-details">
+						<h4>Sovereign Eagle</h4>
+						<p>Travel Influencer</p>
+					</div>
+				</div>
+				<!-- Card 4 -->
+				<div class="testimonial-card">
+					<div class="card-top">
+						<div class="user-info">
+							<img src="img/leopard.png" alt="Mr. Leopard">
+							<div class="stars">
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+								<svg viewBox="0 0 24 24" fill="#e58a3c"><polyline points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+							</div>
+						</div>
+						<span class="quote-mark">"</span>
+					</div>
+					<p class="review-text">Fast delivery, hot food, and amazing taste. This is my go-to spot for weekend dinners with the family.</p>
+					<div class="card-divider"></div>
+					<div class="user-details">
+						<h4>Pacer</h4>
+						<p>Local Guild</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-btn next-btn" aria-label="Next">
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+			</button>
+		</div>		
+	</section>
+
+	<footer id="contact" class="footer-section">
+		<div class="footer-container">
+			<div class="footer-col brand-col">
+				<h2 class="footer-logo">Pizza <span class="highlight">Parlor</span></h2>
+				<p class="brand-text">Elevating taste, crafting memories. Experience the art of pizza like never before.</p>
+				<div class="social-icons">
+					<a href="#" aria-label="Facebook">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+						</svg>
+					</a>
+					<a href="#" aria-label="Instagram">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+							<line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+						</svg>
+					</a>
+					<a href="#" aria-label="Twitter">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+						</svg>
+					</a>
+					<a href="#" aria-label="TikTok">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer-col">
+				<h3>QUICK LINKS</h3>
+				<ul class="footer-links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#menu">Menu</a></li>
+					<li><a href="#specials">Specials</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h3>CONTACT US</h3>
+				<ul class="contact-info">
+					<li>
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e58a3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+							<circle cx="12" cy="10" r="3" />
+						</svg>
+						<span>Wadengeya Kampala Road, Kampala Uganda</span>
+					</li>
+					<li>
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e58a3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+						</svg>
+						<span>+256 757769174</span>
+					</li>
+					<li>
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e58a3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+							<polyline points="22,6 12,13 2,6" />
+						</svg>
+						<span>morris20233@gmail.com</span>
+					</li>
+					<li>
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e58a3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10" />
+							<polyline points="12 6 12 12 16 14" />
+						</svg>
+						<span>Monday - Saturday 11:00 AM - 11:00 PM</span>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h3>NEWSLETTER</h3>
+				<p class="newsletter-text">Stay updated with our latest offers and special events.</p>
+				<form class="newsletter-form" name="newsletter" onsubmit="event.preventDefault(); alert('Subscribed successfully!')">
+					<input type="email" value="morris20233@gmail.com" placeholder="Enter your email" required>
+					<button type="submit">SUBSCRIBE</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; <script>document.write(new Date().getFullYear());</script> Pizza Parlor. All Rights Reserved.</p>
+			<div class="footer-legal">
+				<a href="#">Privacy Policy</a>
+				<span>|</span>
+				<a href="#">Terms of Services</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Receipt Modal (Dialog) -->
+	<div id="receipt-modal" class="modal-overlay">
+		<div class="receipt-container">
+			<div class="receipt-header">
+				<h2 class="logo">Pizza <span class="highlight">Parlor</span></h2>
+				<p>Tel: +256 757 769174</p>
+				<hr class="dashed-line" >
+				<p class="dste-time" id="receipt-date">Date: --</p>
+				<hr class="dashed-line" >
+			</div>
+			<div class="receipt-items" id="receipt-items-container"></div>
+			<div class="receipt-total">
+				<hr class="dashed-line">
+				<div class="total-row">
+					<span>TOTAL:</span>
+					<span id="receipt-total-price">UGX 0</span>
+				</div>
+				<p class="tax-note">Includes all applicable taxes.</p>
+			</div>
+			<div class="receipt-footer">
+				<p>Thank you for dining with us!</p>
+				<p>Please come again.</p>
+				<button id="close-receipt-btn" class="btn-primary" style="margin-top: 15px; width: 100%; justify-content: center;">CLOSE RECEIPT</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sign up Modal -->
+	<div id="signup-modal" class="modal-overlay">
+		<div class="signup-container">
+			<button id="close-signup-btn" class="close-btn" aria-label="Close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="18" y1="6" x2="6" y2="18" />
+					<line x1="6" y1="6" x2="18" y2="18" />
+				</svg>
+			</button>
+			<div class="signup-header">
+				<h2>Join <span class="highlight">Us</span></h2>
+				<p>Create an account to save your favorite pizzas, track your orders, and get exclusive access to special offers.</p>
+			</div>
+			<div class="signup-options">
+				<button class="social-btn google-btn">
+					<svg viewBox="0 0 24 24" width="20" height="20">
+						<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 
+						1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92
+						3.28-4.74 3.28-8.09zM12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23
+						1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99
+						20.53 7.7 23 12 23zM5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43
+						8.55 1 10.22 1 12s.43 3.45 1.18 
+						4.94l2.85-2.22.81-.63zM12
+						5.38c1.62 
+						0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18
+						7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+
+					</svg>
+					Continue with Google
+				</button>
+				<button class="social-btn facebook-btn">
+					<svg viewBox="0 0 24 24" width="20" height="20"  fill="#1877F2">
+						<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+					</svg>
+					Continue with Facebook
+				</button>
+			</div>
+			<div class="signup-divider">
+				<span>or</span>
+			</div>
+			<form class="signup-form" id="signup-form" name="signup" onsubmit="event.preventDefault(); alert('Sign up functionality would go here.');">
+				<input type="email" placeholder="Enter your email address" required>
+				<button type="submit" class="btn-primary" style="width:100%;justify-content: center;margin-top: 15px;">
+					Sign Up with Email
+				</button>
+			</form>
+			<p class="terms-text">By signing up, you agree to our Terms of Service and Privacy Policy.</p>
+		</div>
+	</div>
+
+<script src="index.js"></script>
+</body>
+</html>
